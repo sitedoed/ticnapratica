@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>TIC na Prática</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-   
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    </head>
-    <body class="antialiased">
+@extends ('layouts.public_template')
+    @section('content')
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="align-self-center">TIC na Prática</div>
-
                 <img width=100% src="{{ asset('assets/images/construcao.png')}}">
-
             </div>
         <div>
-    </body>
-</html>
+    @endsection
